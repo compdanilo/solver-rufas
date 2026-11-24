@@ -1,0 +1,334 @@
+{
+ "n_cows": 78,
+ "curve": [
+  {
+   "theta": 0.0,
+   "total": 30017.71177056911,
+   "base_feasible": true,
+   "n_infeasible": 30,
+   "cost_feasible": 17.71177056910892
+  },
+  {
+   "theta": 0.025,
+   "total": 28020.240498011597,
+   "base_feasible": true,
+   "n_infeasible": 28,
+   "cost_feasible": 20.240498011597083
+  },
+  {
+   "theta": 0.05,
+   "total": 30018.27705942793,
+   "base_feasible": true,
+   "n_infeasible": 30,
+   "cost_feasible": 18.277059427931817
+  },
+  {
+   "theta": 0.075,
+   "total": 33022.27031242895,
+   "base_feasible": true,
+   "n_infeasible": 33,
+   "cost_feasible": 22.270312428947364
+  },
+  {
+   "theta": 0.1,
+   "total": 32024.55441423134,
+   "base_feasible": true,
+   "n_infeasible": 32,
+   "cost_feasible": 24.55441423134107
+  },
+  {
+   "theta": 0.125,
+   "total": 32024.017684172402,
+   "base_feasible": true,
+   "n_infeasible": 32,
+   "cost_feasible": 24.01768417240237
+  },
+  {
+   "theta": 0.15,
+   "total": 32119.252921774358,
+   "base_feasible": true,
+   "n_infeasible": 32,
+   "cost_feasible": 119.25292177435767
+  },
+  {
+   "theta": 0.175,
+   "total": 77002.0340328162,
+   "base_feasible": true,
+   "n_infeasible": 77,
+   "cost_feasible": 2.0340328161983052
+  },
+  {
+   "theta": 0.2,
+   "total": 77000.8309158213,
+   "base_feasible": true,
+   "n_infeasible": 77,
+   "cost_feasible": 0.8309158212941838
+  },
+  {
+   "theta": 0.225,
+   "total": 77001.03474122238,
+   "base_feasible": true,
+   "n_infeasible": 77,
+   "cost_feasible": 1.0347412223782158
+  },
+  {
+   "theta": 0.25,
+   "total": 78000.0,
+   "base_feasible": true,
+   "n_infeasible": 78,
+   "cost_feasible": 0.0
+  },
+  {
+   "theta": 0.275,
+   "total": 77001.3789240221,
+   "base_feasible": true,
+   "n_infeasible": 77,
+   "cost_feasible": 1.3789240220939973
+  },
+  {
+   "theta": 0.3,
+   "total": 77001.60282385163,
+   "base_feasible": true,
+   "n_infeasible": 77,
+   "cost_feasible": 1.6028238516300917
+  },
+  {
+   "theta": 0.325,
+   "total": 77002.44409357525,
+   "base_feasible": true,
+   "n_infeasible": 77,
+   "cost_feasible": 2.444093575250008
+  },
+  {
+   "theta": 0.35,
+   "total": 77003.2528382409,
+   "base_feasible": true,
+   "n_infeasible": 77,
+   "cost_feasible": 3.2528382408927428
+  },
+  {
+   "theta": 0.375,
+   "total": 77004.02641298527,
+   "base_feasible": true,
+   "n_infeasible": 77,
+   "cost_feasible": 4.026412985273055
+  },
+  {
+   "theta": 0.4,
+   "total": 77004.7749070783,
+   "base_feasible": true,
+   "n_infeasible": 77,
+   "cost_feasible": 4.774907078302931
+  },
+  {
+   "theta": 0.425,
+   "total": 77005.49993277721,
+   "base_feasible": true,
+   "n_infeasible": 77,
+   "cost_feasible": 5.499932777209324
+  },
+  {
+   "theta": 0.45,
+   "total": null,
+   "base_feasible": false,
+   "n_infeasible": 0,
+   "cost_feasible": null
+  },
+  {
+   "theta": 0.475,
+   "total": null,
+   "base_feasible": false,
+   "n_infeasible": 0,
+   "cost_feasible": null
+  },
+  {
+   "theta": 0.5,
+   "total": null,
+   "base_feasible": false,
+   "n_infeasible": 0,
+   "cost_feasible": null
+  },
+  {
+   "theta": 0.525,
+   "total": null,
+   "base_feasible": false,
+   "n_infeasible": 0,
+   "cost_feasible": null
+  },
+  {
+   "theta": 0.55,
+   "total": null,
+   "base_feasible": false,
+   "n_infeasible": 0,
+   "cost_feasible": null
+  },
+  {
+   "theta": 0.575,
+   "total": null,
+   "base_feasible": false,
+   "n_infeasible": 0,
+   "cost_feasible": null
+  },
+  {
+   "theta": 0.6,
+   "total": null,
+   "base_feasible": false,
+   "n_infeasible": 0,
+   "cost_feasible": null
+  },
+  {
+   "theta": 0.625,
+   "total": null,
+   "base_feasible": false,
+   "n_infeasible": 0,
+   "cost_feasible": null
+  },
+  {
+   "theta": 0.65,
+   "total": null,
+   "base_feasible": false,
+   "n_infeasible": 0,
+   "cost_feasible": null
+  },
+  {
+   "theta": 0.675,
+   "total": null,
+   "base_feasible": false,
+   "n_infeasible": 0,
+   "cost_feasible": null
+  },
+  {
+   "theta": 0.7,
+   "total": null,
+   "base_feasible": false,
+   "n_infeasible": 0,
+   "cost_feasible": null
+  },
+  {
+   "theta": 0.725,
+   "total": null,
+   "base_feasible": false,
+   "n_infeasible": 0,
+   "cost_feasible": null
+  },
+  {
+   "theta": 0.75,
+   "total": null,
+   "base_feasible": false,
+   "n_infeasible": 0,
+   "cost_feasible": null
+  },
+  {
+   "theta": 0.775,
+   "total": null,
+   "base_feasible": false,
+   "n_infeasible": 0,
+   "cost_feasible": null
+  },
+  {
+   "theta": 0.8,
+   "total": null,
+   "base_feasible": false,
+   "n_infeasible": 0,
+   "cost_feasible": null
+  },
+  {
+   "theta": 0.825,
+   "total": null,
+   "base_feasible": false,
+   "n_infeasible": 0,
+   "cost_feasible": null
+  },
+  {
+   "theta": 0.85,
+   "total": null,
+   "base_feasible": false,
+   "n_infeasible": 0,
+   "cost_feasible": null
+  },
+  {
+   "theta": 0.875,
+   "total": null,
+   "base_feasible": false,
+   "n_infeasible": 0,
+   "cost_feasible": null
+  },
+  {
+   "theta": 0.9,
+   "total": null,
+   "base_feasible": false,
+   "n_infeasible": 0,
+   "cost_feasible": null
+  },
+  {
+   "theta": 0.925,
+   "total": null,
+   "base_feasible": false,
+   "n_infeasible": 0,
+   "cost_feasible": null
+  },
+  {
+   "theta": 0.95,
+   "total": null,
+   "base_feasible": false,
+   "n_infeasible": 0,
+   "cost_feasible": null
+  },
+  {
+   "theta": 0.975,
+   "total": null,
+   "base_feasible": false,
+   "n_infeasible": 0,
+   "cost_feasible": null
+  },
+  {
+   "theta": 1.0,
+   "total": null,
+   "base_feasible": false,
+   "n_infeasible": 0,
+   "cost_feasible": null
+  }
+ ],
+ "grids": [
+  {
+   "n_grid": 3,
+   "refine": 4,
+   "theta": 0.0,
+   "total": 30017.71177056911,
+   "n_infeasible": 30,
+   "evaluations": 8
+  },
+  {
+   "n_grid": 5,
+   "refine": 4,
+   "theta": 0.03647450843757885,
+   "total": 28017.638988175153,
+   "n_infeasible": 28,
+   "evaluations": 10
+  },
+  {
+   "n_grid": 9,
+   "refine": 4,
+   "theta": 0.03647450843757886,
+   "total": 28017.638988175153,
+   "n_infeasible": 28,
+   "evaluations": 14
+  },
+  {
+   "n_grid": 21,
+   "refine": 0,
+   "theta": 0.0,
+   "total": 30017.71177056911,
+   "n_infeasible": 30,
+   "evaluations": 21
+  }
+ ],
+ "n_feasible_thetas": 18,
+ "local_minima_indices_on_feasible_grid": [
+  1,
+  5,
+  8,
+  11
+ ],
+ "monotone_nondecreasing": false
+}

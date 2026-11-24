@@ -1,0 +1,793 @@
+{
+ "n_cows": 78,
+ "lp_infeasible": 14,
+ "compared": 64,
+ "lp_violates_true_constraints": 51,
+ "lp_violates_energy": 40,
+ "violation_median_when_violating": 0.02075921612572529,
+ "violation_max": 1345.1701149472246,
+ "cost_gap_pct_median": -0.01192816202037258,
+ "cost_gap_pct_min": -6.142750873846261,
+ "cost_gap_pct_max": 22.219786465617062,
+ "worst_counts": {
+  "protein_constraint_lower": 10,
+  "NDF_constraint_lower": 1,
+  "NASEM_net_energy_constraint": 40
+ },
+ "rows": [
+  {
+   "id": 13013,
+   "lp_feasible": false,
+   "exact_success": false
+  },
+  {
+   "id": 13016,
+   "lp_feasible": true,
+   "exact_success": true,
+   "lp_cost": 31.022090294005608,
+   "exact_cost": 25.8995140681871,
+   "violation": 416.41088534590835,
+   "worst": "protein_constraint_lower",
+   "energy_g": 1.9827677240442014,
+   "mp_g": -416.41088534590835
+  },
+  {
+   "id": 12430,
+   "lp_feasible": true,
+   "exact_success": true,
+   "lp_cost": 25.93361421534778,
+   "exact_cost": 22.76293651044901,
+   "violation": 729.5281724998913,
+   "worst": "protein_constraint_lower",
+   "energy_g": 1.6593185076504824,
+   "mp_g": -729.5281724998913
+  },
+  {
+   "id": 12429,
+   "lp_feasible": true,
+   "exact_success": true,
+   "lp_cost": 14.65689064264235,
+   "exact_cost": 14.595917373659702,
+   "violation": 1.843218910835276e-10,
+   "worst": "DMI_constraint_upper",
+   "energy_g": 0.08405462697282928,
+   "mp_g": 46.97516692125009
+  },
+  {
+   "id": 13020,
+   "lp_feasible": true,
+   "exact_success": true,
+   "lp_cost": 17.86637805881373,
+   "exact_cost": 18.23350805106096,
+   "violation": 503.2833230546121,
+   "worst": "protein_constraint_lower",
+   "energy_g": 0.18330649426319212,
+   "mp_g": -503.2833230546121
+  },
+  {
+   "id": 13022,
+   "lp_feasible": true,
+   "exact_success": true,
+   "lp_cost": 15.424453062239873,
+   "exact_cost": 15.41324536278443,
+   "violation": 20.144702300473455,
+   "worst": "protein_constraint_lower",
+   "energy_g": 0.03352378205295281,
+   "mp_g": -20.144702300473455
+  },
+  {
+   "id": 12431,
+   "lp_feasible": false,
+   "exact_success": false
+  },
+  {
+   "id": 13015,
+   "lp_feasible": true,
+   "exact_success": true,
+   "lp_cost": 15.610327277933004,
+   "exact_cost": 15.611372027592534,
+   "violation": 0.004215273708346956,
+   "worst": "NASEM_net_energy_constraint",
+   "energy_g": -0.004215273708346956,
+   "mp_g": 83.97384273928901
+  },
+  {
+   "id": 13019,
+   "lp_feasible": true,
+   "exact_success": true,
+   "lp_cost": 28.595251947015797,
+   "exact_cost": 26.769049373146,
+   "violation": 1174.0207175002345,
+   "worst": "protein_constraint_lower",
+   "energy_g": 1.6062276365698622,
+   "mp_g": -1174.0207175002345
+  },
+  {
+   "id": 12428,
+   "lp_feasible": true,
+   "exact_success": true,
+   "lp_cost": 36.23038033259519,
+   "exact_cost": 29.643629219387925,
+   "violation": 2.1098410503741682,
+   "worst": "NDF_constraint_lower",
+   "energy_g": 1.6542494526648213,
+   "mp_g": 135.65811230424197
+  },
+  {
+   "id": 12432,
+   "lp_feasible": false,
+   "exact_success": false
+  },
+  {
+   "id": 13017,
+   "lp_feasible": true,
+   "exact_success": true,
+   "lp_cost": 16.27192917475861,
+   "exact_cost": 16.276697475825145,
+   "violation": 0.019169144120375847,
+   "worst": "NASEM_net_energy_constraint",
+   "energy_g": -0.019169144120375847,
+   "mp_g": 31.97034233165732
+  },
+  {
+   "id": 12968,
+   "lp_feasible": false,
+   "exact_success": false
+  },
+  {
+   "id": 12978,
+   "lp_feasible": false,
+   "exact_success": false
+  },
+  {
+   "id": 13003,
+   "lp_feasible": true,
+   "exact_success": true,
+   "lp_cost": 35.41924835019492,
+   "exact_cost": 32.99366345054779,
+   "violation": 746.6688658655012,
+   "worst": "protein_constraint_lower",
+   "energy_g": 1.185351311582174,
+   "mp_g": -746.6688658655012
+  },
+  {
+   "id": 12937,
+   "lp_feasible": false,
+   "exact_success": false
+  },
+  {
+   "id": 12995,
+   "lp_feasible": true,
+   "exact_success": true,
+   "lp_cost": 31.54112379051249,
+   "exact_cost": 33.60542108805895,
+   "violation": 1345.1701149472246,
+   "worst": "protein_constraint_lower",
+   "energy_g": 0.3311693965221991,
+   "mp_g": -1345.1701149472246
+  },
+  {
+   "id": 12933,
+   "lp_feasible": false,
+   "exact_success": false
+  },
+  {
+   "id": 12992,
+   "lp_feasible": false,
+   "exact_success": false
+  },
+  {
+   "id": 12963,
+   "lp_feasible": false,
+   "exact_success": false
+  },
+  {
+   "id": 12991,
+   "lp_feasible": false,
+   "exact_success": false
+  },
+  {
+   "id": 12985,
+   "lp_feasible": false,
+   "exact_success": true
+  },
+  {
+   "id": 12990,
+   "lp_feasible": false,
+   "exact_success": false
+  },
+  {
+   "id": 13002,
+   "lp_feasible": true,
+   "exact_success": true,
+   "lp_cost": 35.608647382916025,
+   "exact_cost": 36.27053436609057,
+   "violation": 1235.8091783131313,
+   "worst": "protein_constraint_lower",
+   "energy_g": 0.7480598537703003,
+   "mp_g": -1235.8091783131313
+  },
+  {
+   "id": 12982,
+   "lp_feasible": false,
+   "exact_success": false
+  },
+  {
+   "id": 12945,
+   "lp_feasible": true,
+   "exact_success": true,
+   "lp_cost": 14.632634294197345,
+   "exact_cost": 14.63246549738819,
+   "violation": 2.923646164276761e-06,
+   "worst": "NDF_constraint_upper",
+   "energy_g": 0.0006833648695874217,
+   "mp_g": 590.242439373304
+  },
+  {
+   "id": 12979,
+   "lp_feasible": false,
+   "exact_success": false
+  },
+  {
+   "id": 12998,
+   "lp_feasible": true,
+   "exact_success": true,
+   "lp_cost": 15.504396223510184,
+   "exact_cost": 15.505428032284263,
+   "violation": 0.004100724081048668,
+   "worst": "NASEM_net_energy_constraint",
+   "energy_g": -0.004100724081048668,
+   "mp_g": 192.82123211001726
+  },
+  {
+   "id": 12941,
+   "lp_feasible": true,
+   "exact_success": true,
+   "lp_cost": 13.904959732315124,
+   "exact_cost": 13.907319662205976,
+   "violation": 0.009519989629474424,
+   "worst": "NASEM_net_energy_constraint",
+   "energy_g": -0.009519989629474424,
+   "mp_g": 620.1237814553906
+  },
+  {
+   "id": 12954,
+   "lp_feasible": true,
+   "exact_success": true,
+   "lp_cost": 14.010720600528792,
+   "exact_cost": 14.012521361199756,
+   "violation": 0.0072584371451966945,
+   "worst": "NASEM_net_energy_constraint",
+   "energy_g": -0.0072584371451966945,
+   "mp_g": 616.8926661983637
+  },
+  {
+   "id": 12984,
+   "lp_feasible": true,
+   "exact_success": true,
+   "lp_cost": 15.805749202238093,
+   "exact_cost": 15.825651681544327,
+   "violation": 0.030870373230719395,
+   "worst": "NASEM_net_energy_constraint",
+   "energy_g": -0.030870373230719395,
+   "mp_g": 254.32152156383472
+  },
+  {
+   "id": 12939,
+   "lp_feasible": true,
+   "exact_success": true,
+   "lp_cost": 14.059044699970073,
+   "exact_cost": 14.060592102102495,
+   "violation": 0.006243538390705794,
+   "worst": "NASEM_net_energy_constraint",
+   "energy_g": -0.006243538390705794,
+   "mp_g": 615.3851696493643
+  },
+  {
+   "id": 13004,
+   "lp_feasible": true,
+   "exact_success": true,
+   "lp_cost": 14.997789247134603,
+   "exact_cost": 14.997538236081386,
+   "violation": 4.7374415501622025e-06,
+   "worst": "NDF_constraint_upper",
+   "energy_g": 0.0010061039021351803,
+   "mp_g": 206.01226332553597
+  },
+  {
+   "id": 12956,
+   "lp_feasible": true,
+   "exact_success": true,
+   "lp_cost": 14.704811392159451,
+   "exact_cost": 14.704554209585284,
+   "violation": 3.2893068819817017e-06,
+   "worst": "NDF_constraint_upper",
+   "energy_g": 0.001028281371105777,
+   "mp_g": 604.0724258297637
+  },
+  {
+   "id": 12934,
+   "lp_feasible": true,
+   "exact_success": true,
+   "lp_cost": 13.455223499027312,
+   "exact_cost": 13.460950994770217,
+   "violation": 0.02306927076780596,
+   "worst": "NASEM_net_energy_constraint",
+   "energy_g": -0.02306927076780596,
+   "mp_g": 640.7934602496548
+  },
+  {
+   "id": 12948,
+   "lp_feasible": true,
+   "exact_success": true,
+   "lp_cost": 14.300852507158314,
+   "exact_cost": 14.301456361433438,
+   "violation": 0.002424665197906961,
+   "worst": "NASEM_net_energy_constraint",
+   "energy_g": -0.002424665197906961,
+   "mp_g": 610.6848398625816
+  },
+  {
+   "id": 12942,
+   "lp_feasible": true,
+   "exact_success": true,
+   "lp_cost": 14.797457605167939,
+   "exact_cost": 14.796474571422351,
+   "violation": 4.241940132487798e-11,
+   "worst": "DMI_constraint_upper",
+   "energy_g": 0.0015717199356686251,
+   "mp_g": 398.0428632124708
+  },
+  {
+   "id": 12943,
+   "lp_feasible": true,
+   "exact_success": true,
+   "lp_cost": 14.297796180445737,
+   "exact_cost": 14.291280356011246,
+   "violation": 5.5361937256748206e-11,
+   "worst": "DMI_constraint_upper",
+   "energy_g": 0.010634060179874893,
+   "mp_g": 375.3039252732533
+  },
+  {
+   "id": 12980,
+   "lp_feasible": true,
+   "exact_success": true,
+   "lp_cost": 19.721692326691027,
+   "exact_cost": 19.21853058451131,
+   "violation": 329.3338547240105,
+   "worst": "protein_constraint_lower",
+   "energy_g": 0.2622026471160197,
+   "mp_g": -329.3338547240105
+  },
+  {
+   "id": 12967,
+   "lp_feasible": true,
+   "exact_success": true,
+   "lp_cost": 15.302084410081859,
+   "exact_cost": 15.307716138678506,
+   "violation": 0.008881263989778176,
+   "worst": "NASEM_net_energy_constraint",
+   "energy_g": -0.008881263989778176,
+   "mp_g": 299.5074723555499
+  },
+  {
+   "id": 12950,
+   "lp_feasible": true,
+   "exact_success": true,
+   "lp_cost": 13.978473068186554,
+   "exact_cost": 13.980480409754893,
+   "violation": 0.008073864705174572,
+   "worst": "NASEM_net_energy_constraint",
+   "energy_g": -0.008073864705174572,
+   "mp_g": 623.9187846054756
+  },
+  {
+   "id": 12993,
+   "lp_feasible": true,
+   "exact_success": true,
+   "lp_cost": 14.437524678361028,
+   "exact_cost": 14.43774117264269,
+   "violation": 0.0008581098115172381,
+   "worst": "NASEM_net_energy_constraint",
+   "energy_g": -0.0008581098115172381,
+   "mp_g": 238.1236143405349
+  },
+  {
+   "id": 12962,
+   "lp_feasible": true,
+   "exact_success": true,
+   "lp_cost": 14.476148974306025,
+   "exact_cost": 14.464063116425486,
+   "violation": 8.541789497940044e-11,
+   "worst": "DMI_constraint_upper",
+   "energy_g": 0.019682935679689706,
+   "mp_g": 270.08469283814384
+  },
+  {
+   "id": 12952,
+   "lp_feasible": true,
+   "exact_success": true,
+   "lp_cost": 14.345482937704563,
+   "exact_cost": 14.301440285309711,
+   "violation": 4.4425263467928744e-10,
+   "worst": "phosphorus_constraint",
+   "energy_g": 0.036039306736789456,
+   "mp_g": 248.86420698569873
+  },
+  {
+   "id": 12983,
+   "lp_feasible": true,
+   "exact_success": true,
+   "lp_cost": 14.847810193515782,
+   "exact_cost": 14.84748824721536,
+   "violation": 4.003262802143581e-06,
+   "worst": "NDF_constraint_upper",
+   "energy_g": 0.0013028999963111687,
+   "mp_g": 590.7923378759529
+  },
+  {
+   "id": 12944,
+   "lp_feasible": true,
+   "exact_success": true,
+   "lp_cost": 14.347572187517212,
+   "exact_cost": 14.34799270295118,
+   "violation": 0.0017052813179105897,
+   "worst": "NASEM_net_energy_constraint",
+   "energy_g": -0.0017052813179105897,
+   "mp_g": 600.9494432670213
+  },
+  {
+   "id": 12940,
+   "lp_feasible": true,
+   "exact_success": true,
+   "lp_cost": 14.24341873798136,
+   "exact_cost": 14.244243187458576,
+   "violation": 0.003302392959028566,
+   "worst": "NASEM_net_energy_constraint",
+   "energy_g": -0.003302392959028566,
+   "mp_g": 622.5059582182685
+  },
+  {
+   "id": 12951,
+   "lp_feasible": true,
+   "exact_success": true,
+   "lp_cost": 13.86493984911774,
+   "exact_cost": 13.8664090156581,
+   "violation": 0.0024261993091272416,
+   "worst": "NASEM_net_energy_constraint",
+   "energy_g": -0.0024261993091272416,
+   "mp_g": 509.20628885663655
+  },
+  {
+   "id": 12969,
+   "lp_feasible": true,
+   "exact_success": true,
+   "lp_cost": 14.729701158863875,
+   "exact_cost": 14.72943385859044,
+   "violation": 3.414571466464622e-06,
+   "worst": "NDF_constraint_upper",
+   "energy_g": 0.0010833509519940776,
+   "mp_g": 596.5096574936097
+  },
+  {
+   "id": 13007,
+   "lp_feasible": true,
+   "exact_success": true,
+   "lp_cost": 13.328987092659602,
+   "exact_cost": 13.335589680450127,
+   "violation": 0.026712882777573554,
+   "worst": "NASEM_net_energy_constraint",
+   "energy_g": -0.026712882777573554,
+   "mp_g": 252.90401950143314
+  },
+  {
+   "id": 12986,
+   "lp_feasible": true,
+   "exact_success": true,
+   "lp_cost": 13.342483226604008,
+   "exact_cost": 13.348760127642661,
+   "violation": 0.025466621717740168,
+   "worst": "NASEM_net_energy_constraint",
+   "energy_g": -0.025466621717740168,
+   "mp_g": 253.41218147170912
+  },
+  {
+   "id": 12953,
+   "lp_feasible": true,
+   "exact_success": true,
+   "lp_cost": 14.697001075464684,
+   "exact_cost": 14.696757986457591,
+   "violation": 3.2499118631790225e-06,
+   "worst": "NDF_constraint_upper",
+   "energy_g": 0.0009803615153316514,
+   "mp_g": 597.2380882107459
+  },
+  {
+   "id": 13008,
+   "lp_feasible": true,
+   "exact_success": true,
+   "lp_cost": 13.75271840557051,
+   "exact_cost": 13.755723705811496,
+   "violation": 0.012239069037427441,
+   "worst": "NASEM_net_energy_constraint",
+   "energy_g": -0.012239069037427441,
+   "mp_g": 225.44658044425705
+  },
+  {
+   "id": 12976,
+   "lp_feasible": true,
+   "exact_success": true,
+   "lp_cost": 13.662414438851654,
+   "exact_cost": 13.666567435165419,
+   "violation": 0.01666944605498344,
+   "worst": "NASEM_net_energy_constraint",
+   "energy_g": -0.01666944605498344,
+   "mp_g": 653.3865602926053
+  },
+  {
+   "id": 12966,
+   "lp_feasible": true,
+   "exact_success": true,
+   "lp_cost": 14.255840755185464,
+   "exact_cost": 14.256558870319854,
+   "violation": 0.0029055559048245527,
+   "worst": "NASEM_net_energy_constraint",
+   "energy_g": -0.0029055559048245527,
+   "mp_g": 612.1593285407826
+  },
+  {
+   "id": 12970,
+   "lp_feasible": true,
+   "exact_success": true,
+   "lp_cost": 13.9318097865352,
+   "exact_cost": 13.934119258477844,
+   "violation": 0.009270713721647894,
+   "worst": "NASEM_net_energy_constraint",
+   "energy_g": -0.009270713721647894,
+   "mp_g": 634.7670386519162
+  },
+  {
+   "id": 12987,
+   "lp_feasible": true,
+   "exact_success": true,
+   "lp_cost": 12.418258486589641,
+   "exact_cost": 12.438201120850689,
+   "violation": 0.0801263980252287,
+   "worst": "NASEM_net_energy_constraint",
+   "energy_g": -0.0801263980252287,
+   "mp_g": 297.40589647554225
+  },
+  {
+   "id": 12955,
+   "lp_feasible": true,
+   "exact_success": true,
+   "lp_cost": 14.198842604290956,
+   "exact_cost": 14.199817386071858,
+   "violation": 0.003918263987792159,
+   "worst": "NASEM_net_energy_constraint",
+   "energy_g": -0.003918263987792159,
+   "mp_g": 625.2763601316592
+  },
+  {
+   "id": 13006,
+   "lp_feasible": true,
+   "exact_success": true,
+   "lp_cost": 13.641502223712706,
+   "exact_cost": 13.645290858155686,
+   "violation": 0.015400885892148608,
+   "worst": "NASEM_net_energy_constraint",
+   "energy_g": -0.015400885892148608,
+   "mp_g": 234.26705779499935
+  },
+  {
+   "id": 12949,
+   "lp_feasible": true,
+   "exact_success": true,
+   "lp_cost": 16.48565743728241,
+   "exact_cost": 15.635556345087236,
+   "violation": 200.19709179582696,
+   "worst": "protein_constraint_lower",
+   "energy_g": 0.345187476901323,
+   "mp_g": -200.19709179582696
+  },
+  {
+   "id": 12935,
+   "lp_feasible": true,
+   "exact_success": true,
+   "lp_cost": 13.240530293270153,
+   "exact_cost": 13.248466334290242,
+   "violation": 0.03192737427875869,
+   "worst": "NASEM_net_energy_constraint",
+   "energy_g": -0.03192737427875869,
+   "mp_g": 664.2047884806743
+  },
+  {
+   "id": 12957,
+   "lp_feasible": true,
+   "exact_success": true,
+   "lp_cost": 13.79144746985572,
+   "exact_cost": 13.794435846670293,
+   "violation": 0.012082640770799458,
+   "worst": "NASEM_net_energy_constraint",
+   "energy_g": -0.012082640770799458,
+   "mp_g": 625.3768681832257
+  },
+  {
+   "id": 12972,
+   "lp_feasible": true,
+   "exact_success": true,
+   "lp_cost": 14.609272378356147,
+   "exact_cost": 14.60913710110464,
+   "violation": 2.8045169671031545e-06,
+   "worst": "NDF_constraint_upper",
+   "energy_g": 0.0005492445496599885,
+   "mp_g": 606.9033376412435
+  },
+  {
+   "id": 12977,
+   "lp_feasible": true,
+   "exact_success": true,
+   "lp_cost": 13.96964478574314,
+   "exact_cost": 13.971652411265906,
+   "violation": 0.008096006146992352,
+   "worst": "NASEM_net_energy_constraint",
+   "energy_g": -0.008096006146992352,
+   "mp_g": 634.8991278656686
+  },
+  {
+   "id": 12958,
+   "lp_feasible": true,
+   "exact_success": true,
+   "lp_cost": 13.549585110473423,
+   "exact_cost": 13.554479740189926,
+   "violation": 0.019720234403123982,
+   "worst": "NASEM_net_energy_constraint",
+   "energy_g": -0.019720234403123982,
+   "mp_g": 643.5440777785561
+  },
+  {
+   "id": 12947,
+   "lp_feasible": true,
+   "exact_success": true,
+   "lp_cost": 14.27112494147337,
+   "exact_cost": 14.271792808044408,
+   "violation": 0.0027014724489262676,
+   "worst": "NASEM_net_energy_constraint",
+   "energy_g": -0.0027014724489262676,
+   "mp_g": 609.2781275340667
+  },
+  {
+   "id": 12965,
+   "lp_feasible": true,
+   "exact_success": true,
+   "lp_cost": 12.990891610101691,
+   "exact_cost": 13.001564898999426,
+   "violation": 0.04301601162595148,
+   "worst": "NASEM_net_energy_constraint",
+   "energy_g": -0.04301601162595148,
+   "mp_g": 684.1703129553284
+  },
+  {
+   "id": 12973,
+   "lp_feasible": true,
+   "exact_success": true,
+   "lp_cost": 13.47009417427246,
+   "exact_cost": 13.474969941082826,
+   "violation": 0.019887174523240958,
+   "worst": "NASEM_net_energy_constraint",
+   "energy_g": -0.019887174523240958,
+   "mp_g": 644.7135539898863
+  },
+  {
+   "id": 12981,
+   "lp_feasible": true,
+   "exact_success": true,
+   "lp_cost": 14.05504177219163,
+   "exact_cost": 14.056539022010174,
+   "violation": 0.006071239565720532,
+   "worst": "NASEM_net_energy_constraint",
+   "energy_g": -0.006071239565720532,
+   "mp_g": 619.4168382979215
+  },
+  {
+   "id": 12960,
+   "lp_feasible": true,
+   "exact_success": true,
+   "lp_cost": 13.538072824146365,
+   "exact_cost": 13.543243644883688,
+   "violation": 0.02075921612572529,
+   "worst": "NASEM_net_energy_constraint",
+   "energy_g": -0.02075921612572529,
+   "mp_g": 646.2802483784144
+  },
+  {
+   "id": 12988,
+   "lp_feasible": true,
+   "exact_success": true,
+   "lp_cost": 11.938023108648045,
+   "exact_cost": 11.962893212897342,
+   "violation": 0.10141494817673902,
+   "worst": "NASEM_net_energy_constraint",
+   "energy_g": -0.10141494817673902,
+   "mp_g": 276.4281174806174
+  },
+  {
+   "id": 12974,
+   "lp_feasible": true,
+   "exact_success": true,
+   "lp_cost": 12.643447639866242,
+   "exact_cost": 12.65713626252882,
+   "violation": 0.055757442198192564,
+   "worst": "NASEM_net_energy_constraint",
+   "energy_g": -0.055757442198192564,
+   "mp_g": 684.8768723471267
+  },
+  {
+   "id": 12964,
+   "lp_feasible": true,
+   "exact_success": true,
+   "lp_cost": 12.863380277209988,
+   "exact_cost": 12.874735392932282,
+   "violation": 0.04609578577453277,
+   "worst": "NASEM_net_energy_constraint",
+   "energy_g": -0.04609578577453277,
+   "mp_g": 678.19789865554
+  },
+  {
+   "id": 13005,
+   "lp_feasible": true,
+   "exact_success": true,
+   "lp_cost": 12.199070848616154,
+   "exact_cost": 12.218147830977845,
+   "violation": 0.07811556301707867,
+   "worst": "NASEM_net_energy_constraint",
+   "energy_g": -0.07811556301707867,
+   "mp_g": 243.18782215525607
+  },
+  {
+   "id": 12996,
+   "lp_feasible": true,
+   "exact_success": true,
+   "lp_cost": 11.65116879801214,
+   "exact_cost": 11.677080462760241,
+   "violation": 0.10689340837846117,
+   "worst": "NASEM_net_energy_constraint",
+   "energy_g": -0.10689340837846117,
+   "mp_g": 295.3737142220225
+  },
+  {
+   "id": 12971,
+   "lp_feasible": true,
+   "exact_success": true,
+   "lp_cost": 12.917106789565883,
+   "exact_cost": 12.926210131573708,
+   "violation": 0.03742279677038596,
+   "worst": "NASEM_net_energy_constraint",
+   "energy_g": -0.03742279677038596,
+   "mp_g": 635.0604868390133
+  },
+  {
+   "id": 12961,
+   "lp_feasible": true,
+   "exact_success": true,
+   "lp_cost": 13.494277606844665,
+   "exact_cost": 13.499056632440222,
+   "violation": 0.019461632766336834,
+   "worst": "NASEM_net_energy_constraint",
+   "energy_g": -0.019461632766336834,
+   "mp_g": 597.694740734632
+  },
+  {
+   "id": 12975,
+   "lp_feasible": true,
+   "exact_success": true,
+   "lp_cost": 12.30771461779018,
+   "exact_cost": 12.32664871738718,
+   "violation": 0.07704040672304302,
+   "worst": "NASEM_net_energy_constraint",
+   "energy_g": -0.07704040672304302,
+   "mp_g": 695.535463453014
+  }
+ ]
+}

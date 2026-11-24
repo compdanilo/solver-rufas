@@ -1,0 +1,11 @@
+{
+ "files": {
+  "tasks": {
+   "title": "t",
+   "description": "t",
+   "path": "input/tmp_run/task_ind.json",
+   "type": "json",
+   "properties": "tasks_properties"
+  }
+ }
+}

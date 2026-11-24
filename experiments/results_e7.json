@@ -1,0 +1,197 @@
+[
+ {
+  "cow": 0,
+  "NASEM_net_energy_constraint": {
+   "max_eig": 0.0062437215230558936,
+   "min_eig": -0.04447236877979842
+  },
+  "protein_constraint_lower": {
+   "max_eig": 19.534791703569265,
+   "min_eig": -76.3067384050889
+  },
+  "protein_constraint_upper": {
+   "max_eig": 31024.23141237871,
+   "min_eig": -6624.522943890151
+  }
+ },
+ {
+  "cow": 6,
+  "NASEM_net_energy_constraint": {
+   "max_eig": 0.006279810342594054,
+   "min_eig": -0.04847468348561388
+  },
+  "protein_constraint_lower": {
+   "max_eig": 6367.5521492144,
+   "min_eig": -7659.381974805984
+  },
+  "protein_constraint_upper": {
+   "max_eig": 15788.309245952962,
+   "min_eig": -7235.02926360116
+  }
+ },
+ {
+  "cow": 12,
+  "NASEM_net_energy_constraint": {
+   "max_eig": 0.006349281071857872,
+   "min_eig": -0.05440713668866806
+  },
+  "protein_constraint_lower": {
+   "max_eig": 17725.216989100358,
+   "min_eig": -10478.165104534013
+  },
+  "protein_constraint_upper": {
+   "max_eig": 1866.4898922305013,
+   "min_eig": -14889.173767763185
+  }
+ },
+ {
+  "cow": 18,
+  "NASEM_net_energy_constraint": {
+   "max_eig": 0.0063167081471603255,
+   "min_eig": -0.0518477371664261
+  },
+  "protein_constraint_lower": {
+   "max_eig": 1111.7131488550765,
+   "min_eig": -9245.204364405836
+  },
+  "protein_constraint_upper": {
+   "max_eig": 7117.0818152833435,
+   "min_eig": -3774.165518751157
+  }
+ },
+ {
+  "cow": 24,
+  "NASEM_net_energy_constraint": {
+   "max_eig": 0.006224594016058766,
+   "min_eig": -0.04192846328050605
+  },
+  "protein_constraint_lower": {
+   "max_eig": 13477.991577883868,
+   "min_eig": -12064.901431072645
+  },
+  "protein_constraint_upper": {
+   "max_eig": 3593.6357598974273,
+   "min_eig": -294.95581706494585
+  }
+ },
+ {
+  "cow": 30,
+  "NASEM_net_energy_constraint": {
+   "max_eig": 0.006249380075453934,
+   "min_eig": -0.045159994828584724
+  },
+  "protein_constraint_lower": {
+   "max_eig": 1941.59659334973,
+   "min_eig": -851.9556462685026
+  },
+  "protein_constraint_upper": {
+   "max_eig": 4441.183119516689,
+   "min_eig": -405.58511541652706
+  }
+ },
+ {
+  "cow": 36,
+  "NASEM_net_energy_constraint": {
+   "max_eig": 0.0062562702423762,
+   "min_eig": -0.04596376566980985
+  },
+  "protein_constraint_lower": {
+   "max_eig": 16543.87646052057,
+   "min_eig": -652.25062108777
+  },
+  "protein_constraint_upper": {
+   "max_eig": 9470.411941240074,
+   "min_eig": -7348.913491530432
+  }
+ },
+ {
+  "cow": 42,
+  "NASEM_net_energy_constraint": {
+   "max_eig": 0.006267168744449519,
+   "min_eig": -0.04716798636807885
+  },
+  "protein_constraint_lower": {
+   "max_eig": 7486.626930419606,
+   "min_eig": -9150.792690206898
+  },
+  "protein_constraint_upper": {
+   "max_eig": 112131.44714188023,
+   "min_eig": -40821.43322663221
+  }
+ },
+ {
+  "cow": 48,
+  "NASEM_net_energy_constraint": {
+   "max_eig": 0.0062122778402687725,
+   "min_eig": -0.040062151846697355
+  },
+  "protein_constraint_lower": {
+   "max_eig": 481.66468669749236,
+   "min_eig": -737.7282029593794
+  },
+  "protein_constraint_upper": {
+   "max_eig": 4698.8703941920385,
+   "min_eig": -6771.126400244175
+  }
+ },
+ {
+  "cow": 54,
+  "NASEM_net_energy_constraint": {
+   "max_eig": 0.006217488840940334,
+   "min_eig": -0.0408779848297582
+  },
+  "protein_constraint_lower": {
+   "max_eig": 11.604171178456781,
+   "min_eig": -133.47044027390587
+  },
+  "protein_constraint_upper": {
+   "max_eig": 7144.245933260152,
+   "min_eig": -8019.175522803571
+  }
+ },
+ {
+  "cow": 60,
+  "NASEM_net_energy_constraint": {
+   "max_eig": 0.00625256432607446,
+   "min_eig": -0.045535826606100324
+  },
+  "protein_constraint_lower": {
+   "max_eig": 155.01257120791607,
+   "min_eig": -1322.023859111125
+  },
+  "protein_constraint_upper": {
+   "max_eig": 4786.693565924681,
+   "min_eig": -6100.694581382536
+  }
+ },
+ {
+  "cow": 66,
+  "NASEM_net_energy_constraint": {
+   "max_eig": 0.006251925324632163,
+   "min_eig": -0.04546101853567681
+  },
+  "protein_constraint_lower": {
+   "max_eig": 523.5510522087704,
+   "min_eig": -34930.75254563785
+  },
+  "protein_constraint_upper": {
+   "max_eig": 35716.418532453725,
+   "min_eig": -2738.475802035509
+  }
+ },
+ {
+  "cow": 72,
+  "NASEM_net_energy_constraint": {
+   "max_eig": 0.0062308528323670904,
+   "min_eig": -0.042802441806846656
+  },
+  "protein_constraint_lower": {
+   "max_eig": 1170.3564891721685,
+   "min_eig": -2392.3593532707455
+  },
+  "protein_constraint_upper": {
+   "max_eig": 4326.833714005629,
+   "min_eig": -1695.9296481881304
+  }
+ }
+]

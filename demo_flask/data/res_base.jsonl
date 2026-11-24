@@ -1,0 +1,4 @@
+{"n_cows": 76, "cost_per_cow_day": 0.31895523000000003, "cost_pen_day": 24.24059748, "underfed_cows": 28, "energy_balance_mean": 9.464936817287137, "dmi_mean": 31.89552299999999}
+{"n_cows": 78, "cost_per_cow_day": 0.31685265, "cost_pen_day": 24.7145067, "underfed_cows": 33, "energy_balance_mean": -0.03017363469101725, "dmi_mean": 31.685265000000037}
+{"n_cows": 84, "cost_per_cow_day": 0.33044031, "cost_pen_day": 27.75698604, "underfed_cows": 36, "energy_balance_mean": 0.647312061062888, "dmi_mean": 32.167593}
+{"n_cows": 91, "cost_per_cow_day": 0.32062644, "cost_pen_day": 29.177006040000002, "underfed_cows": 39, "energy_balance_mean": -0.027614890093489122, "dmi_mean": 32.06264400000005}

@@ -1,0 +1,713 @@
+{
+ "n_feasible": 65,
+ "active_counts": {
+  "DMI_constraint_upper": 16,
+  "NASEM_net_energy_constraint": 56,
+  "calcium_constraint": 8,
+  "phosphorus_constraint": 62,
+  "protein_constraint_upper": 9,
+  "protein_constraint_lower": 3,
+  "NDF_constraint_upper": 3
+ },
+ "energy_price_all": {
+  "n": 64,
+  "median": 0.004410718056727603,
+  "mean": 0.1774248776721142,
+  "min": -0.0011197931816099849,
+  "max": 1.8108780766497505
+ },
+ "energy_price_when_active": {
+  "n": 55,
+  "median": 0.004427258885015828
+ },
+ "mp_price_all": {
+  "n": 65,
+  "median": 2.8593793999220907e-13,
+  "mean": -0.01444943955733706,
+  "min": -0.2599499513009116,
+  "max": 0.019394003246456015
+ },
+ "mp_price_when_active": {
+  "n": 3,
+  "median": 0.019338851242778565
+ },
+ "rows": [
+  {
+   "id": 13016,
+   "cost": 3.0566913379485094,
+   "active": [
+    "DMI_constraint_upper",
+    "NASEM_net_energy_constraint",
+    "calcium_constraint",
+    "phosphorus_constraint",
+    "protein_constraint_upper"
+   ],
+   "d_cost_per_mcal": 1.684371528171932,
+   "d_cost_per_100g_mp": -0.2243819165777987
+  },
+  {
+   "id": 12430,
+   "cost": 1.063460907218501,
+   "active": [
+    "DMI_constraint_upper",
+    "NASEM_net_energy_constraint",
+    "calcium_constraint",
+    "phosphorus_constraint",
+    "protein_constraint_upper"
+   ],
+   "d_cost_per_mcal": 1.8108780766497505,
+   "d_cost_per_100g_mp": -0.1444284617052447
+  },
+  {
+   "id": 12429,
+   "cost": 0.2956151000377497,
+   "active": [
+    "NASEM_net_energy_constraint",
+    "protein_constraint_lower"
+   ],
+   "d_cost_per_mcal": 0.1331398380767424,
+   "d_cost_per_100g_mp": 0.01557925150784667
+  },
+  {
+   "id": 13020,
+   "cost": 0.6003612022253637,
+   "active": [
+    "DMI_constraint_upper",
+    "NASEM_net_energy_constraint",
+    "phosphorus_constraint"
+   ],
+   "d_cost_per_mcal": 0.24661302230290283,
+   "d_cost_per_100g_mp": -4.884981308350689e-15
+  },
+  {
+   "id": 13022,
+   "cost": 0.41435082253800803,
+   "active": [
+    "DMI_constraint_upper",
+    "NASEM_net_energy_constraint",
+    "phosphorus_constraint"
+   ],
+   "d_cost_per_mcal": 0.16554970915628553,
+   "d_cost_per_100g_mp": -5.2735593669694936e-15
+  },
+  {
+   "id": 13015,
+   "cost": 0.3884745037177828,
+   "active": [
+    "DMI_constraint_upper",
+    "protein_constraint_lower"
+   ],
+   "d_cost_per_mcal": 0.005222009133958649,
+   "d_cost_per_100g_mp": 0.019394003246456015
+  },
+  {
+   "id": 13019,
+   "cost": 1.2668554935885175,
+   "active": [
+    "DMI_constraint_upper",
+    "NASEM_net_energy_constraint",
+    "calcium_constraint",
+    "phosphorus_constraint",
+    "protein_constraint_upper"
+   ],
+   "d_cost_per_mcal": 1.4924251364096655,
+   "d_cost_per_100g_mp": -0.021918826859896212
+  },
+  {
+   "id": 12428,
+   "cost": 2.7766288947612936,
+   "active": [
+    "DMI_constraint_upper",
+    "NASEM_net_energy_constraint",
+    "calcium_constraint",
+    "phosphorus_constraint",
+    "protein_constraint_upper"
+   ],
+   "d_cost_per_mcal": 1.7414249103860393,
+   "d_cost_per_100g_mp": -0.24957376273614917
+  },
+  {
+   "id": 13017,
+   "cost": 0.41646949668440336,
+   "active": [
+    "DMI_constraint_upper",
+    "protein_constraint_lower"
+   ],
+   "d_cost_per_mcal": 0.008876386416219184,
+   "d_cost_per_100g_mp": 0.019338851242778565
+  },
+  {
+   "id": 13003,
+   "cost": 1.5430345211892007,
+   "active": [
+    "DMI_constraint_upper",
+    "NASEM_net_energy_constraint",
+    "calcium_constraint",
+    "phosphorus_constraint",
+    "protein_constraint_upper"
+   ],
+   "d_cost_per_mcal": 1.610880733473858,
+   "d_cost_per_100g_mp": -0.025703723319545624
+  },
+  {
+   "id": 12995,
+   "cost": 1.2299296165057116,
+   "active": [
+    "DMI_constraint_upper",
+    "NASEM_net_energy_constraint",
+    "calcium_constraint",
+    "phosphorus_constraint",
+    "protein_constraint_upper"
+   ],
+   "d_cost_per_mcal": 0.3881728994937379,
+   "d_cost_per_100g_mp": -0.07385022070183878
+  },
+  {
+   "id": 12985,
+   "cost": 4.606026984341244,
+   "active": [
+    "DMI_constraint_upper",
+    "NASEM_net_energy_constraint",
+    "calcium_constraint",
+    "phosphorus_constraint",
+    "protein_constraint_upper"
+   ],
+   "d_cost_per_mcal": null,
+   "d_cost_per_100g_mp": -0.2599499513009116
+  },
+  {
+   "id": 13002,
+   "cost": 1.3303383424973776,
+   "active": [
+    "DMI_constraint_upper",
+    "NASEM_net_energy_constraint",
+    "calcium_constraint",
+    "phosphorus_constraint",
+    "protein_constraint_upper"
+   ],
+   "d_cost_per_mcal": 0.41747535757294973,
+   "d_cost_per_100g_mp": -0.06488605253586499
+  },
+  {
+   "id": 12945,
+   "cost": 0.3192371157036913,
+   "active": [
+    "NASEM_net_energy_constraint",
+    "phosphorus_constraint"
+   ],
+   "d_cost_per_mcal": 0.004049581783638123,
+   "d_cost_per_100g_mp": -8.774634047137297e-08
+  },
+  {
+   "id": 12998,
+   "cost": 0.3542392264710975,
+   "active": [
+    "phosphorus_constraint"
+   ],
+   "d_cost_per_mcal": 0.0001629116238285877,
+   "d_cost_per_100g_mp": 0.010724687183356563
+  },
+  {
+   "id": 12941,
+   "cost": 0.30188499894101,
+   "active": [
+    "NASEM_net_energy_constraint",
+    "phosphorus_constraint"
+   ],
+   "d_cost_per_mcal": 0.004330795828144274,
+   "d_cost_per_100g_mp": 0.0002816783500161901
+  },
+  {
+   "id": 12954,
+   "cost": 0.30465741104788596,
+   "active": [
+    "NASEM_net_energy_constraint",
+    "phosphorus_constraint"
+   ],
+   "d_cost_per_mcal": 0.004020271287327681,
+   "d_cost_per_100g_mp": -4.87950012043048e-05
+  },
+  {
+   "id": 12984,
+   "cost": 0.35989689312143835,
+   "active": [
+    "DMI_constraint_upper",
+    "NASEM_net_energy_constraint",
+    "NDF_constraint_upper",
+    "phosphorus_constraint"
+   ],
+   "d_cost_per_mcal": 0.15464588272737712,
+   "d_cost_per_100g_mp": -3.228837297530873e-08
+  },
+  {
+   "id": 12939,
+   "cost": 0.30575440122304487,
+   "active": [
+    "NASEM_net_energy_constraint",
+    "phosphorus_constraint"
+   ],
+   "d_cost_per_mcal": 0.0040176758249420574,
+   "d_cost_per_100g_mp": -4.891852380678463e-05
+  },
+  {
+   "id": 13004,
+   "cost": 0.3422684205359432,
+   "active": [
+    "phosphorus_constraint"
+   ],
+   "d_cost_per_mcal": -0.0011197931816099849,
+   "d_cost_per_100g_mp": 0.009349972485795943
+  },
+  {
+   "id": 12956,
+   "cost": 0.3204800517180432,
+   "active": [
+    "NASEM_net_energy_constraint",
+    "phosphorus_constraint"
+   ],
+   "d_cost_per_mcal": 0.004213744958394494,
+   "d_cost_per_100g_mp": 2.7443020421735742e-05
+  },
+  {
+   "id": 12934,
+   "cost": 0.29120846816506374,
+   "active": [
+    "NASEM_net_energy_constraint",
+    "phosphorus_constraint"
+   ],
+   "d_cost_per_mcal": 0.004411643740746207,
+   "d_cost_per_100g_mp": 7.21922521762508e-13
+  },
+  {
+   "id": 12948,
+   "cost": 0.3112969952138711,
+   "active": [
+    "NASEM_net_energy_constraint",
+    "phosphorus_constraint"
+   ],
+   "d_cost_per_mcal": 0.00408219756372552,
+   "d_cost_per_100g_mp": -4.912021517727849e-05
+  },
+  {
+   "id": 12942,
+   "cost": 0.3172848689282809,
+   "active": [
+    "NASEM_net_energy_constraint",
+    "phosphorus_constraint"
+   ],
+   "d_cost_per_mcal": 0.08955480834836316,
+   "d_cost_per_100g_mp": -3.055152171865805e-05
+  },
+  {
+   "id": 12943,
+   "cost": 0.3043517620447203,
+   "active": [
+    "NASEM_net_energy_constraint",
+    "phosphorus_constraint"
+   ],
+   "d_cost_per_mcal": 0.08816731167860631,
+   "d_cost_per_100g_mp": 1.4281353877265701e-12
+  },
+  {
+   "id": 12980,
+   "cost": 0.718811689221029,
+   "active": [
+    "DMI_constraint_upper",
+    "NASEM_net_energy_constraint",
+    "phosphorus_constraint",
+    "protein_constraint_upper"
+   ],
+   "d_cost_per_mcal": 0.36409680710044,
+   "d_cost_per_100g_mp": -0.02428397772617885
+  },
+  {
+   "id": 12967,
+   "cost": 0.32667850767627005,
+   "active": [
+    "NASEM_net_energy_constraint",
+    "phosphorus_constraint"
+   ],
+   "d_cost_per_mcal": 0.14279541461734013,
+   "d_cost_per_100g_mp": -6.164562740440527e-06
+  },
+  {
+   "id": 12950,
+   "cost": 0.30343846586354106,
+   "active": [
+    "NASEM_net_energy_constraint",
+    "phosphorus_constraint"
+   ],
+   "d_cost_per_mcal": 0.004356679257055296,
+   "d_cost_per_100g_mp": -4.792412936588386e-05
+  },
+  {
+   "id": 12993,
+   "cost": 0.3241433233639421,
+   "active": [
+    "phosphorus_constraint"
+   ],
+   "d_cost_per_mcal": 0.001529887195755475,
+   "d_cost_per_100g_mp": 0.010344316512264307
+  },
+  {
+   "id": 12962,
+   "cost": 0.3059527890506961,
+   "active": [
+    "NASEM_net_energy_constraint",
+    "phosphorus_constraint"
+   ],
+   "d_cost_per_mcal": 0.14142144859826022,
+   "d_cost_per_100g_mp": 2.0859980409682066e-12
+  },
+  {
+   "id": 12952,
+   "cost": 0.3094631848362607,
+   "active": [
+    "DMI_constraint_upper",
+    "NASEM_net_energy_constraint",
+    "phosphorus_constraint"
+   ],
+   "d_cost_per_mcal": 0.15848778686289677,
+   "d_cost_per_100g_mp": 8.881784197001252e-16
+  },
+  {
+   "id": 12983,
+   "cost": 0.32392156363131974,
+   "active": [
+    "NASEM_net_energy_constraint",
+    "phosphorus_constraint"
+   ],
+   "d_cost_per_mcal": 0.004040234905965001,
+   "d_cost_per_100g_mp": 3.3071044822641227e-06
+  },
+  {
+   "id": 12944,
+   "cost": 0.3125903566892579,
+   "active": [
+    "NASEM_net_energy_constraint",
+    "phosphorus_constraint"
+   ],
+   "d_cost_per_mcal": 0.003998483702978117,
+   "d_cost_per_100g_mp": -4.975619913849538e-05
+  },
+  {
+   "id": 12940,
+   "cost": 0.3092712783629857,
+   "active": [
+    "NASEM_net_energy_constraint",
+    "phosphorus_constraint"
+   ],
+   "d_cost_per_mcal": 0.004409792372708998,
+   "d_cost_per_100g_mp": -4.8031771424539293e-05
+  },
+  {
+   "id": 12951,
+   "cost": 0.297150305566509,
+   "active": [
+    "NASEM_net_energy_constraint",
+    "phosphorus_constraint"
+   ],
+   "d_cost_per_mcal": 0.015368279169701515,
+   "d_cost_per_100g_mp": 8.284484209752918e-13
+  },
+  {
+   "id": 12969,
+   "cost": 0.3211475300008088,
+   "active": [
+    "NASEM_net_energy_constraint",
+    "phosphorus_constraint"
+   ],
+   "d_cost_per_mcal": 0.004026344825215689,
+   "d_cost_per_100g_mp": -0.00022501633447141733
+  },
+  {
+   "id": 13007,
+   "cost": 0.29686410762081245,
+   "active": [
+    "phosphorus_constraint"
+   ],
+   "d_cost_per_mcal": 0.0036414419269063525,
+   "d_cost_per_100g_mp": 0.009771959292335597
+  },
+  {
+   "id": 12986,
+   "cost": 0.2983390323000777,
+   "active": [
+    "phosphorus_constraint"
+   ],
+   "d_cost_per_mcal": 0.0026837948341518203,
+   "d_cost_per_100g_mp": 0.008592769884888274
+  },
+  {
+   "id": 12953,
+   "cost": 0.3203109061017822,
+   "active": [
+    "NASEM_net_energy_constraint",
+    "phosphorus_constraint"
+   ],
+   "d_cost_per_mcal": 0.0040941405984570856,
+   "d_cost_per_100g_mp": -3.995418735314171e-05
+  },
+  {
+   "id": 13008,
+   "cost": 0.3097681223410086,
+   "active": [
+    "phosphorus_constraint"
+   ],
+   "d_cost_per_mcal": 0.0007358998457787091,
+   "d_cost_per_100g_mp": 0.010235729234014335
+  },
+  {
+   "id": 12976,
+   "cost": 0.29523023326740805,
+   "active": [
+    "NASEM_net_energy_constraint",
+    "phosphorus_constraint"
+   ],
+   "d_cost_per_mcal": 0.004460992435003863,
+   "d_cost_per_100g_mp": 7.148726055561383e-13
+  },
+  {
+   "id": 12966,
+   "cost": 0.31040086124777777,
+   "active": [
+    "NASEM_net_energy_constraint",
+    "phosphorus_constraint"
+   ],
+   "d_cost_per_mcal": 0.004004112807276916,
+   "d_cost_per_100g_mp": -4.943891395836619e-05
+  },
+  {
+   "id": 12970,
+   "cost": 0.3019897905858955,
+   "active": [
+    "NASEM_net_energy_constraint",
+    "phosphorus_constraint"
+   ],
+   "d_cost_per_mcal": 0.004417880546559005,
+   "d_cost_per_100g_mp": 8.271161533457416e-13
+  },
+  {
+   "id": 12987,
+   "cost": 0.27477045582263765,
+   "active": [
+    "NASEM_net_energy_constraint",
+    "phosphorus_constraint"
+   ],
+   "d_cost_per_mcal": 0.004449202500368343,
+   "d_cost_per_100g_mp": 0.005054214077945762
+  },
+  {
+   "id": 12955,
+   "cost": 0.30829891097392714,
+   "active": [
+    "NASEM_net_energy_constraint",
+    "phosphorus_constraint"
+   ],
+   "d_cost_per_mcal": 0.0043772920272617255,
+   "d_cost_per_100g_mp": -4.814547752629572e-05
+  },
+  {
+   "id": 13006,
+   "cost": 0.3066002638196641,
+   "active": [
+    "phosphorus_constraint"
+   ],
+   "d_cost_per_mcal": 0.0013195981743751584,
+   "d_cost_per_100g_mp": 0.00969467490938647
+  },
+  {
+   "id": 12949,
+   "cost": 0.46393038841380324,
+   "active": [
+    "DMI_constraint_upper",
+    "NASEM_net_energy_constraint",
+    "phosphorus_constraint"
+   ],
+   "d_cost_per_mcal": 0.3322311127789917,
+   "d_cost_per_100g_mp": 5.786265910856514e-11
+  },
+  {
+   "id": 12935,
+   "cost": 0.2856599863439784,
+   "active": [
+    "NASEM_net_energy_constraint",
+    "phosphorus_constraint"
+   ],
+   "d_cost_per_mcal": 0.004493453698202088,
+   "d_cost_per_100g_mp": 1.3909984275528586e-12
+  },
+  {
+   "id": 12957,
+   "cost": 0.29817155182330934,
+   "active": [
+    "NASEM_net_energy_constraint",
+    "phosphorus_constraint"
+   ],
+   "d_cost_per_mcal": 0.004395694763902669,
+   "d_cost_per_100g_mp": 7.251976796851523e-13
+  },
+  {
+   "id": 12972,
+   "cost": 0.3170959266575922,
+   "active": [
+    "NASEM_net_energy_constraint",
+    "phosphorus_constraint"
+   ],
+   "d_cost_per_mcal": 0.0043732551038647705,
+   "d_cost_per_100g_mp": -4.8624921967943546e-05
+  },
+  {
+   "id": 12977,
+   "cost": 0.3019134612636756,
+   "active": [
+    "NASEM_net_energy_constraint",
+    "NDF_constraint_upper",
+    "phosphorus_constraint"
+   ],
+   "d_cost_per_mcal": 0.004470121305300556,
+   "d_cost_per_100g_mp": 7.044365091246618e-14
+  },
+  {
+   "id": 12958,
+   "cost": 0.29250447113744293,
+   "active": [
+    "NASEM_net_energy_constraint",
+    "phosphorus_constraint"
+   ],
+   "d_cost_per_mcal": 0.004491779963909925,
+   "d_cost_per_100g_mp": 2.8593793999220907e-13
+  },
+  {
+   "id": 12947,
+   "cost": 0.3101955966829196,
+   "active": [
+    "NASEM_net_energy_constraint",
+    "phosphorus_constraint"
+   ],
+   "d_cost_per_mcal": 0.0040054465848505805,
+   "d_cost_per_100g_mp": -4.911948644181763e-05
+  },
+  {
+   "id": 12965,
+   "cost": 0.27948659191603215,
+   "active": [
+    "NASEM_net_energy_constraint",
+    "phosphorus_constraint"
+   ],
+   "d_cost_per_mcal": 0.0044768091982400615,
+   "d_cost_per_100g_mp": 5.132283875664001e-09
+  },
+  {
+   "id": 12973,
+   "cost": 0.2904630367492502,
+   "active": [
+    "NASEM_net_energy_constraint",
+    "phosphorus_constraint"
+   ],
+   "d_cost_per_mcal": 0.004409417309044539,
+   "d_cost_per_100g_mp": 3.896327704921987e-13
+  },
+  {
+   "id": 12981,
+   "cost": 0.30336661496994816,
+   "active": [
+    "NASEM_net_energy_constraint",
+    "NDF_constraint_upper",
+    "phosphorus_constraint"
+   ],
+   "d_cost_per_mcal": 0.0044627929067173056,
+   "d_cost_per_100g_mp": -4.063416270128073e-14
+  },
+  {
+   "id": 12960,
+   "cost": 0.2918463054673961,
+   "active": [
+    "NASEM_net_energy_constraint",
+    "phosphorus_constraint"
+   ],
+   "d_cost_per_mcal": 0.004516533689654434,
+   "d_cost_per_100g_mp": 3.1863400806741993e-13
+  },
+  {
+   "id": 12988,
+   "cost": 0.2633265917568736,
+   "active": [
+    "NASEM_net_energy_constraint",
+    "phosphorus_constraint"
+   ],
+   "d_cost_per_mcal": 0.004253805691668333,
+   "d_cost_per_100g_mp": 0.007434129540980439
+  },
+  {
+   "id": 12974,
+   "cost": 0.2713758563364216,
+   "active": [
+    "NASEM_net_energy_constraint",
+    "phosphorus_constraint"
+   ],
+   "d_cost_per_mcal": 0.004399062468075199,
+   "d_cost_per_100g_mp": 8.023973707693699e-10
+  },
+  {
+   "id": 12964,
+   "cost": 0.2760874643078312,
+   "active": [
+    "NASEM_net_energy_constraint",
+    "phosphorus_constraint"
+   ],
+   "d_cost_per_mcal": 0.004427258885015828,
+   "d_cost_per_100g_mp": 2.176371027839963e-09
+  },
+  {
+   "id": 13005,
+   "cost": 0.2707189129987745,
+   "active": [
+    "NASEM_net_energy_constraint",
+    "phosphorus_constraint"
+   ],
+   "d_cost_per_mcal": 0.004259709820252755,
+   "d_cost_per_100g_mp": 0.009977421900334627
+  },
+  {
+   "id": 12996,
+   "cost": 0.25716454933996763,
+   "active": [
+    "NASEM_net_energy_constraint",
+    "phosphorus_constraint"
+   ],
+   "d_cost_per_mcal": 0.004159213784692528,
+   "d_cost_per_100g_mp": 0.004748585844347286
+  },
+  {
+   "id": 12971,
+   "cost": 0.2785537684327019,
+   "active": [
+    "NASEM_net_energy_constraint",
+    "phosphorus_constraint"
+   ],
+   "d_cost_per_mcal": 0.00434458523675002,
+   "d_cost_per_100g_mp": 5.162537064506978e-14
+  },
+  {
+   "id": 12961,
+   "cost": 0.29201889158422695,
+   "active": [
+    "NASEM_net_energy_constraint",
+    "phosphorus_constraint"
+   ],
+   "d_cost_per_mcal": 0.004339562889088933,
+   "d_cost_per_100g_mp": 1.1360357099476914e-12
+  },
+  {
+   "id": 12975,
+   "cost": 0.262912204219609,
+   "active": [
+    "NASEM_net_energy_constraint",
+    "phosphorus_constraint"
+   ],
+   "d_cost_per_mcal": 0.004400401205105597,
+   "d_cost_per_100g_mp": 3.7470027081099033e-14
+  }
+ ]
+}

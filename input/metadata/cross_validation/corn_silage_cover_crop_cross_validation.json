@@ -1,0 +1,136 @@
+{
+  "cross_validation": [
+    {
+      "title": "CornSilage-CoverCrop schedule 0 planting years/days",
+      "description": "CornSilage-CoverCrop.crop_schedules.0.planting_years and CornSilage-CoverCrop.crop_schedules.0.planting_days must have the same number of entries (one planting day per planting year).",
+      "aliases": {
+        "variables": {
+          "planting_years": "CornSilage-CoverCrop.crop_schedules.0.planting_years",
+          "planting_days": "CornSilage-CoverCrop.crop_schedules.0.planting_days"
+        }
+      },
+      "rules": [
+        {
+          "left_hand": {
+            "aggregation": {
+              "operation": "no_op",
+              "mode": "element_wise",
+              "operands": [
+                "planting_years"
+              ]
+            }
+          },
+          "right_hand": {
+            "aggregation": {
+              "operation": "no_op",
+              "mode": "element_wise",
+              "operands": [
+                "planting_days"
+              ]
+            }
+          },
+          "relationship": "is_equal_length"
+        }
+      ]
+    },
+    {
+      "title": "CornSilage-CoverCrop schedule 0 harvest years/days",
+      "description": "CornSilage-CoverCrop.crop_schedules.0.harvest_years and CornSilage-CoverCrop.crop_schedules.0.harvest_days must have the same number of entries (one harvest day per harvest year).",
+      "aliases": {
+        "variables": {
+          "harvest_years": "CornSilage-CoverCrop.crop_schedules.0.harvest_years",
+          "harvest_days": "CornSilage-CoverCrop.crop_schedules.0.harvest_days"
+        }
+      },
+      "rules": [
+        {
+          "left_hand": {
+            "aggregation": {
+              "operation": "no_op",
+              "mode": "element_wise",
+              "operands": [
+                "harvest_years"
+              ]
+            }
+          },
+          "right_hand": {
+            "aggregation": {
+              "operation": "no_op",
+              "mode": "element_wise",
+              "operands": [
+                "harvest_days"
+              ]
+            }
+          },
+          "relationship": "is_equal_length"
+        }
+      ]
+    },
+    {
+      "title": "CornSilage-CoverCrop schedule 1 planting years/days",
+      "description": "CornSilage-CoverCrop.crop_schedules.1.planting_years and CornSilage-CoverCrop.crop_schedules.1.planting_days must have the same number of entries (one planting day per planting year).",
+      "aliases": {
+        "variables": {
+          "planting_years": "CornSilage-CoverCrop.crop_schedules.1.planting_years",
+          "planting_days": "CornSilage-CoverCrop.crop_schedules.1.planting_days"
+        }
+      },
+      "rules": [
+        {
+          "left_hand": {
+            "aggregation": {
+              "operation": "no_op",
+              "mode": "element_wise",
+              "operands": [
+                "planting_years"
+              ]
+            }
+          },
+          "right_hand": {
+            "aggregation": {
+              "operation": "no_op",
+              "mode": "element_wise",
+              "operands": [
+                "planting_days"
+              ]
+            }
+          },
+          "relationship": "is_equal_length"
+        }
+      ]
+    },
+    {
+      "title": "CornSilage-CoverCrop schedule 1 harvest years/days",
+      "description": "CornSilage-CoverCrop.crop_schedules.1.harvest_years and CornSilage-CoverCrop.crop_schedules.1.harvest_days must have the same number of entries (one harvest day per harvest year).",
+      "aliases": {
+        "variables": {
+          "harvest_years": "CornSilage-CoverCrop.crop_schedules.1.harvest_years",
+          "harvest_days": "CornSilage-CoverCrop.crop_schedules.1.harvest_days"
+        }
+      },
+      "rules": [
+        {
+          "left_hand": {
+            "aggregation": {
+              "operation": "no_op",
+              "mode": "element_wise",
+              "operands": [
+                "harvest_years"
+              ]
+            }
+          },
+          "right_hand": {
+            "aggregation": {
+              "operation": "no_op",
+              "mode": "element_wise",
+              "operands": [
+                "harvest_days"
+              ]
+            }
+          },
+          "relationship": "is_equal_length"
+        }
+      ]
+    }
+  ]
+}

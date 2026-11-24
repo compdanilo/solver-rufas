@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Solver de ração · RuFaS</title>
+<style>
+  :root { --bg:#f2f5f4; --panel:#fff; --fg:#14231f; --muted:#5a6d67; --line:#d3dcd9; --accent:#1c6b57; --warn:#a65f00; --warnbg:#fbe9c9; --okbg:#dcefe8; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#0e1a17; --panel:#15261f; --fg:#e6efec; --muted:#9db2ab; --line:#284038; --accent:#5fc9a8; --warn:#f2b134; --warnbg:#3a2d10; --okbg:#1c3a30; } }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:15px/1.5 system-ui, sans-serif; padding:24px 16px 48px; }
+  .wrap { max-width:1100px; margin:0 auto; }
+  h1 { font-size:28px; margin:0 0 6px; } h2 { font-size:18px; margin:0 0 10px; }
+  .muted { color:var(--muted); }
+  .panel { background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:18px; margin-top:16px; }
+  .tabs { display:flex; gap:8px; margin-top:16px; }
+  .tabs button { background:transparent; color:var(--accent); border:1px solid var(--accent); }
+  .tabs button.on { background:var(--accent); color:var(--panel); }
+  button { font:inherit; font-weight:600; background:var(--accent); color:var(--panel); border:0; border-radius:8px; padding:9px 16px; cursor:pointer; }
+  form { display:flex; flex-wrap:wrap; gap:14px; align-items:end; }
+  label { display:flex; flex-direction:column; gap:4px; font-size:13px; color:var(--muted); }
+  input { font:inherit; width:130px; padding:7px 9px; border:1px solid var(--line); border-radius:6px; background:var(--bg); color:var(--fg); }
+  table { border-collapse:collapse; width:100%; font-variant-numeric:tabular-nums; }
+  th,td { text-align:left; padding:6px 8px; border-bottom:1px solid var(--line); font-size:13.5px; }
+  th { color:var(--muted); font-weight:500; font-size:12px; text-transform:uppercase; letter-spacing:.04em; }
+  .scroll { overflow:auto; max-height:320px; border:1px solid var(--line); border-radius:8px; }
+  .wide { overflow-x:auto; }
+  .pill { padding:2px 9px; border-radius:999px; font-size:12px; font-weight:600; background:var(--okbg); color:var(--accent); }
+  .pill.bad { background:var(--warnbg); color:var(--warn); }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:14px; }
+  .big { font-size:26px; font-weight:700; }
+  svg text { fill:var(--muted); font-size:12px; }
+  [hidden] { display:none !important; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Solver de ração por vaca</h1>
+  <p class="muted">Demonstração em Flask do código Python do trabalho: coortes por lactação e paridade, ração por vaca e ração base + concentrado individual.</p>
+  <div class="tabs"><button id="t1" class="on" type="button">Demonstração</button><button id="t2" type="button">Simulação real (RuFaS)</button></div>
+
+  <section id="demo">
+    <div class="panel">
+      <form id="f">
+        <label>Vacas<input name="n" type="number" value="120" min="20" max="300"></label>
+        <label>Semente<input name="seed" type="number" value="7"></label>
+        <label>Volumoso mínimo (%)<input name="min_forage" type="number" value="40"></label>
+        <label>Concentrado máx. (kg/vaca/dia)<input name="max_conc" type="number" value="8" step="0.5"></label>
+        <button type="submit">Calcular</button>
+      </form>
+      <p class="muted" style="margin:12px 0 0">Alimentos e preços fictícios (resolvedor linear de demonstração): {% for n, f in feeds.items() %}{{ n }} (R$ {{ "%.2f"|format(f[2]) }}/kg){% if not loop.last %}, {% endif %}{% endfor %}.</p>
+    </div>
+    <div id="out" hidden>
+      <div class="panel"><h2>Estratégias por coorte (código: <code>compare_plans</code>)</h2><div class="wide"><table id="planos"></table></div>
+        <p class="muted" style="margin:10px 0 0">Só se comparam custos entre estratégias que alimentam todas as vacas; a ração da vaca média é mais barata, mas deixa vacas em déficit.</p></div>
+      <div class="panel"><h2>Base + concentrado individual (código: <code>plan_base_plus_concentrate</code>)</h2>
+        <div class="grid" id="hib"></div><div id="curva" class="wide"></div></div>
+      <div class="panel"><h2>Coortes</h2><div class="wide"><table id="coortes"></table></div></div>
+      <div class="panel"><h2>Ração individual de cada vaca</h2><div class="scroll"><table id="vacas"></table></div></div>
+    </div>
+  </section>
+
+  <section id="real" hidden>
+    <div class="panel"><h2>Simulação real do RuFaS (95 dias, dados de exemplo)</h2>
+      <p class="muted">Resultados guardados da execução com o solver completo (SLSQP com partida por PL). Déficit: energia ou proteína abaixo do necessário, critério do trabalho.</p>
+      <div class="wide"><table id="realtab"></table></div></div>
+  </section>
+</div>
+<script>
+const $ = s => document.querySelector(s), n2 = (v, d=2) => v.toLocaleString('pt-BR', {minimumFractionDigits:d, maximumFractionDigits:d});
+const row = (cells, tag='td') => '<tr>' + cells.map(c => `<${tag}>${c}</${tag}>`).join('') + '</tr>';
+$('#t1').onclick = () => { $('#demo').hidden = false; $('#real').hidden = true; $('#t1').className = 'on'; $('#t2').className = ''; };
+$('#t2').onclick = async () => { $('#demo').hidden = true; $('#real').hidden = false; $('#t2').className = 'on'; $('#t1').className = ''; if (!$('#realtab').innerHTML) loadReal(); };
+async function run(e) {
+  if (e) e.preventDefault();
+  const r = await fetch('/api/run?' + new URLSearchParams(new FormData($('#f'))));
+  const d = await r.json(); $('#out').hidden = false;
+  $('#planos').innerHTML = row(['Estratégia','Grupos','Custo (R$/dia)','Vacas em déficit'],'th') +
+    d.planos.map(p => row([p.estrategia, p.grupos, n2(p.custo), `<span class="pill ${p.vacas_em_deficit ? 'bad':''}">${p.vacas_em_deficit}</span>`])).join('') +
+    row(['Uma ração por vaca', d.n_vacas, n2(d.individual.custo), `<span class="pill ${d.individual.vacas_em_deficit ? 'bad':''}">${d.individual.vacas_em_deficit}</span>`]);
+  const h = d.hibrido;
+  $('#hib').innerHTML = [['Custo (R$/dia)', n2(h.custo)], ['θ escolhido', n2(h.theta, 2)], ['Concentrado total (kg)', n2(h.concentrado_total_kg, 1)], ['Vacas sem solução', h.vacas_sem_solucao]]
+    .map(([l, v]) => `<div><div class="muted">${l}</div><div class="big">${v}</div></div>`).join('');
+  curve(h);
+  $('#coortes').innerHTML = row(['Coorte','Vacas','DIM médio','Mcal/kg MS'],'th') + d.coortes.map(c => row([c.nome, c.vacas, c.dim_medio, n2(c.mcal_por_kg)])).join('');
+  $('#vacas').innerHTML = row(['#','Lactação','DIM','MS kg','Mcal/kg MS','Custo R$','Ração (kg MS)'],'th') +
+    d.vacas.map((v, i) => row([i+1, v.lactacao, v.dim, n2(v.ms,1), n2(v.energia_por_kg), v.custo === null ? 'sem solução' : n2(v.custo),
+      Object.entries(v.racao).map(([k, q]) => `${k}: ${n2(q, 1)}`).join(' · ')])).join('');
+}
+function curve(h) {
+  const pts = h.curva.filter(p => p[1] !== null); if (!pts.length) { $('#curva').innerHTML = ''; return; }
+  const w = 640, ht = 240, L = 56, B = 36, T = 14, ys = pts.map(p => p[1]), lo = Math.min(...ys), hi = Math.max(...ys), sp = Math.max(hi - lo, 1);
+  const X = t => L + t * (w - L - 12), Y = v => ht - B - (v - (lo - sp*.1)) / (sp*1.2) * (ht - B - T);
+  let s = `<svg viewBox="0 0 ${w} ${ht}" width="100%" style="max-width:${w}px"><line x1="${L}" y1="${ht-B}" x2="${w-12}" y2="${ht-B}" stroke="var(--line)"/>`;
+  s += `<polyline fill="none" stroke="var(--accent)" stroke-width="2.5" points="${pts.map(p => X(p[0]) + ',' + Y(p[1])).join(' ')}"/>`;
+  pts.forEach(p => s += `<circle cx="${X(p[0])}" cy="${Y(p[1])}" r="${p[0] === h.theta ? 6 : 3}" fill="${p[0] === h.theta ? '#c27a00' : 'var(--accent)'}"/>`);
+  [lo, hi].forEach(v => s += `<text x="${L-6}" y="${Y(v)+4}" text-anchor="end">${n2(v,0)}</text>`);
+  [0, .5, 1].forEach(t => s += `<text x="${X(t)}" y="${ht-B+16}" text-anchor="middle">${t}</text>`);
+  s += `<text x="${(L+w)/2}" y="${ht-6}" text-anchor="middle">θ (0 = vaca média, 1 = vaca mais exigente) · ponto laranja = base escolhida</text></svg>`;
+  $('#curva').innerHTML = s;
+}
+async function loadReal() {
+  const d = await (await fetch('/api/real')).json(), names = {base:'RuFaS original', ind:'Uma ração por vaca', hyb:'Base + concentrado'};
+  let html = row(['Cenário','Reformulação','Vacas','Custo R$/vaca·dia','Vacas em déficit','Vacas sem solução','θ'],'th');
+  for (const k of ['base','ind','hyb']) d[k].forEach((r, i) => { const rp = r.report || {};
+    html += row([i ? '' : names[k], i+1, r.n_cows, n2(r.cost_per_cow_day, 3), r.underfed_cows, rp.n_fallback_to_pen_ration ?? '—', rp.theta != null ? n2(rp.theta) : '—']); });
+  $('#realtab').innerHTML = html;
+}
+$('#f').addEventListener('submit', run); run();
+</script>
+</body>
+</html>
